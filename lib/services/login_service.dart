@@ -18,8 +18,9 @@ class LoginService {
     try {
       final request = await _networkAPICall.post(
         ApiConstants.sendOtp,
-        header: {"Content-Type": "application/json"},
-        jsonEncode(body),
+        header: {'Content-Type': 'application/json'},
+        // jsonEncode(body),
+        body,
       );
       if (request != null) {
         if (request["success"] != true) {

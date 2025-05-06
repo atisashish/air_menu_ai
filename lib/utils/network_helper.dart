@@ -201,7 +201,7 @@ class NetworkAPICall {
           }
         case 400:
           try {
-            return jsonDecode(response.body);
+            return response.body.isNotEmpty ? jsonDecode(response.body) : null;
           } catch (e) {
             rethrow;
           }
@@ -213,7 +213,7 @@ class NetworkAPICall {
           }
         case 408:
           try {
-            return jsonDecode(response.body);
+            return response.body.isNotEmpty ? jsonDecode(response.body) : null;
           } catch (e) {
             rethrow;
           }

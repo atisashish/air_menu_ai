@@ -21,7 +21,7 @@ class PhoneNumberController extends GetxController {
       SendOtpModel user = await LoginService.sendOtp(body: body);
       isLoading.value = false;
       if (user.success == true) {
-        ShowToastDialog.showToast("Your OTP is ${user.data?.otp}" ?? "");
+        ShowToastDialog.showToast("Your OTP is ${user.data?.otp}");
       } else {
         ShowToastDialog.showToast(user.message);
       }

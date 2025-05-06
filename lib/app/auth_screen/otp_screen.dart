@@ -200,7 +200,8 @@ class OtpScreen extends StatelessWidget {
                                                 phoneNumberController
                                                     .phoneNUmberEditingController
                                                     .value
-                                                    .text,
+                                                    .text
+                                                    .trim(),
                                           };
                                           phoneNumberController.sendOtp(
                                             body: body,

@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 class ApiConstants {
-  static const String baseUrl = "https://rastorant-server.vercel.app/v1/api/";
+  static const String baseUrl = " https://rastorant-server.vercel.app/v1/api/";
   static const String sendOtp = "auth/request-otp";
   static const String verifyOtp = "auth/verify-otp";
   static const String categories = "categories";
